@@ -1,19 +1,12 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: v1
+kind: Pod
 metadata:
   name: kubia
 spec:
-  selector:
-    matchLabels:
-      run: kubia
-  replicas: 3
-  template:
-    metadata:
-      labels:
-        run: kubia
-    spec:
-      containers:
-      - name: kubia
-        image: knix008/kubia
-        ports:
+  containers:
+    - name: kubia
+      image: knix008/kubia
+      ports:
         - containerPort: 8080
+          name: http
+          protocol: TCP
