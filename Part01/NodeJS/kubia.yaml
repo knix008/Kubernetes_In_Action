@@ -1,16 +1,16 @@
-apiVersion: v1
-kind: ReplicationController
+apiVersion: apps/v1
+kind: Deployment
 metadata:
   name: kubia
 spec:
-  replicas: 3
   selector:
-    app: kubia
+    matchLabels:
+      run: kubia
+  replicas: 3
   template:
     metadata:
-      name: kubia
       labels:
-        app: kubia
+        run: kubia
     spec:
       containers:
       - name: kubia
