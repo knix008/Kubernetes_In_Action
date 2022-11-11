@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: nodejs
+spec:
+  replicas: 3
+  selector:
+    app: nodejs
+  template:
+    metadata:
+      name: nodejs
+      labels:
+        app: nodejs
+    spec:
+      containers:
+      - name: nodejs
+        image: knix008/kubia
+        ports:
+        - containerPort: 8080
