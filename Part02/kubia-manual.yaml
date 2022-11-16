@@ -4,8 +4,8 @@ metadata:
   name: kubia-manual
 spec:
   containers:
-  - image: luksa/kubia
-    name: kubia
-    ports:
-    - containerPort: 8080
-      protocol: TCP
+    - image: luksa/kubia
+      name: kubia
+      ports:
+        - containerPort: 8080
+          protocol: TCP
