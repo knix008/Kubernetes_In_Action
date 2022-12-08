@@ -4,7 +4,7 @@ metadata:
   name: kubia-headless
 spec:
   clusterIP: None
-  publishNotReadyAddresses: true
+  #publishNotReadyAddresses: true
   ports:
   - port: 80
     targetPort: 8080
