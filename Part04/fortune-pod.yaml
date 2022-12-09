@@ -21,3 +21,6 @@ spec:
   volumes:
   - name: html
     emptyDir: {}
+    #emptyDir:
+    #  medium: Memory
+
