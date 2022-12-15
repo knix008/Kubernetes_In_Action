@@ -11,4 +11,4 @@ spec:
   accessModes:
   - ReadWriteOnce
   hostPath:
-    path: "/home/shkwon/Projects/Kubernetes_In_Action/Part04/data"
+    path: "/tmp/data"

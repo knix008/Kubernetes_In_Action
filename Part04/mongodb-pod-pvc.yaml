@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: mongodb 
+  name: mongodb
 spec:
   containers:
-  - image: mongo
+  - image: mongo:4.4.6
     name: mongodb
     volumeMounts:
     - name: mongodb-data
