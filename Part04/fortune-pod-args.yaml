@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: fortune-args
+spec:
+  containers:
+  - name: fortune-args
+    image: knix008/fortune:args
+    command: ["/bin/fortuneloop.sh"]
+    args: ["10"]
