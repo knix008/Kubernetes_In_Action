@@ -1,8 +1,9 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: v1
+kind: ReplicationController
 metadata:
-  name: kubia
+  name: kubia-v2
 spec:
+  replicas: 3
   template:
     metadata:
       name: kubia
