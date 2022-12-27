@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   name: kubia
 spec:
+  replicas: 3
+  minReadySeconds: 10
   template:
     metadata:
       name: kubia
@@ -12,3 +14,6 @@ spec:
       containers:
       - image: knix008/kubia:v2
         name: nodejs
+  selector:
+    matchLabels:
+      app: kubia
