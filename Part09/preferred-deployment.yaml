@@ -32,3 +32,6 @@ spec:
         - "99999"
         image: busybox
         name: main
+  selector:
+    matchLabels:
+      app: pref
