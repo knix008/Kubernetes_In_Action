@@ -24,3 +24,6 @@ spec:
         args:
         - sleep
         - "99999"
+  selector:
+    matchLabels:
+      app: frontend
