@@ -15,4 +15,7 @@ spec:
       - name: main
         image: knix008/website-controller
       - name: proxy
-        image: knix008/kubectl-proxy:1.6.2
+        image: knix008/kubectl-proxy:latest
+  selector:
+    matchLabels:
+      app: website-controller
