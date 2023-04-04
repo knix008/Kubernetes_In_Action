@@ -6,3 +6,6 @@ image: build
 
 push: image
 	docker push knix008/website-controller:latest
+
+clean: 
+	@-rm website-controller
